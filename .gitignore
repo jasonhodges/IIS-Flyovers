@@ -29,8 +29,11 @@ build/Release
 # Dependency directories
 node_modules
 jspm_packages
+<<<<<<< HEAD
 bower_components
 .bower*
+=======
+>>>>>>> 5c0e0110d7b77f7d2ea5f9b894c4eb03c9354cfc
 
 # Optional npm cache directory
 .npm
