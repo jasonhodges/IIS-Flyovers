@@ -1,0 +1,21 @@
+{
+  "name": "ISS-Flyovers",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jasonhodges/ISS-Flyovers",
+  "authors": [
+    "jason <jason@jasonhodges.me>"
+  ],
+  "description": "underscorejs tutorial",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "~1.8.3"
+  }
+}

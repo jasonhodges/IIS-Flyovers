@@ -1,0 +1,27 @@
+{
+  "name": "iss-flyovers",
+  "version": "0.0.1",
+  "description": "UnderscoreJS tutorial",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonhodges/ISS-Flyovers.git"
+  },
+  "keywords": [
+    "tutorial",
+    "UnderscoreJS"
+  ],
+  "author": "Jason Hodges <jason@jasonhodges.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonhodges/ISS-Flyovers/issues"
+  },
+  "homepage": "https://github.com/jasonhodges/ISS-Flyovers#readme"
+}
