@@ -4,8 +4,7 @@
   "description": "UnderscoreJS tutorial",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.13.4",
-    "underscore": "^1.8.3"
+    "express": "^4.13.4"
   },
   "devDependencies": {},
   "scripts": {
@@ -13,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jasonhodges/IIS-Flyovers.git"
+    "url": "git+https://github.com/jasonhodges/ISS-Flyovers.git"
   },
   "keywords": [
     "tutorial",
@@ -22,7 +21,7 @@
   "author": "Jason Hodges <jason@jasonhodges.me>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jasonhodges/IIS-Flyovers/issues"
+    "url": "https://github.com/jasonhodges/ISS-Flyovers/issues"
   },
-  "homepage": "https://github.com/jasonhodges/IIS-Flyovers#readme"
+  "homepage": "https://github.com/jasonhodges/ISS-Flyovers#readme"
 }
