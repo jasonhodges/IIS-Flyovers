@@ -1,30 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>ISS Flyover</title>
   <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<style>
-  .container {
-    max-width: 600px;
-  }  
-</style>
-  </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <style>
+    .container {
+      max-width: 600px;
+    }
+  </style>
+</head>
+
 <body>
   <div class="container">
     <div class="page-header">
       <h1>See the Station <small>Spot the ISS</small></h1>
-  <div class="text-center">
-      <button class="btn btn-default"></button>
+      <div class="text-center">
+        <button id="refresh" class="btn btn-default">refresh</button>
+      </div>
+      <div>
+        <b>On the Station right now</b>
+        <span id="astronauts"></span>
+        <ul id="astroList"></ul>
+      </div>
+      <div>
+        Latitude: <input id="latitude" value="39.2414534"> Longitude: <input id="longitude" value="-85.8715052">
       </div>
     </div>
+
+    <h2>Weather Summary</h2>
+    <div id="summary">
+
+    </div>
+
+    <h2>Flyovers</h2>
     <div id="flyovers">
-      
+
     </div>
   </div>
+
+  <script type="text/template" id="day-template">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Day: <%= title %></h3>
+      </div>
+      <div class="panel-body">
+        <ul class="list-group">
+          <% _.each(flyovers, function (flyover) { %>
+            <li class="list-group-item">
+              <b>
+                <%= flyover.risetime.toLocaleString() %>
+                for <%= Math.floor(flyover.duration/60) %>m<%= flyover.duration % 60 %>s
+              </b>
+              <%= flyover.weatherDescription %>
+            </li>
+          <% }) %>
+        </ul>
+      </div>
+    </div>
+  </script>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
-  <script src="ISS-Flyovers/bower_components/underscore/underscore.js"></script>
-  <script src="ISS-Flyovers/scripts.js"></script>
- 
+  <script src="./bower_components/underscore/underscore.js"></script>
+  <script src="scripts.js"></script>
+
 </body>
+
 </html>
